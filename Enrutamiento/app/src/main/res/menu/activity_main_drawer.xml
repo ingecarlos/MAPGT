@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_action_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_geoposicionar"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Geoposicionar centro Educativo" />
+        <item
+            android:id="@+id/nav_reportar"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="Reportar Incidente" />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Guia de uso"
+
+            />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Configuración" />
+
+
+
+    </group>
+
+
+</menu>

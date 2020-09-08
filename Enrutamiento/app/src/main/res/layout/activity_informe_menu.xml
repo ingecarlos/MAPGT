@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".informeGraficos.informeMenu">
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container_Search"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+
+            android:background="@drawable/side_nav_bar"
+            android:minHeight="80dp"
+
+            android:paddingLeft="35dp"
+
+            android:paddingRight="35dp"
+            tools:layout_editor_absoluteY="400dp">
+
+
+
+            <EditText
+                android:id="@+id/buscarTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/search_box"
+
+                android:ems="10"
+
+                android:fontFamily="sans-serif-medium"
+                android:hint="Buscar Formulario"
+
+                android:inputType="text"
+                android:letterSpacing="0.25"
+                android:maxLength="13"
+                android:minHeight="40dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+
+                android:textColor="@color/backgroundColorWhite"
+
+
+                android:textColorHint="@color/backgroundColorWhite"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.551"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04" />
+
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+
+
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ripple_backgrounwhite_rounded"
+
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="buscar"
+                android:paddingLeft="2dp"
+                android:text="Buscar"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/buscarTxt"
+                app:layout_constraintTop_toBottomOf="@id/buscarTxt" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/informeMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formularios Recientes"
+            android:textSize="24dp"
+            android:textAlignment="center"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <ListView
+            android:id="@+id/formulariosList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:divider="@android:color/transparent"
+            android:paddingBottom="20dp"
+            >
+
+        </ListView>
+
+
+    </LinearLayout>
+</RelativeLayout>

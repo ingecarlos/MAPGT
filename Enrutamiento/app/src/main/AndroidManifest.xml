@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.george.enrutamiento"
+    android:sharedUserId="org.odk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MAPGT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".informeGraficos.informeMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".informeGraficos.informeGraficos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Muro_Notificaciones" />
+        <activity
+            android:name=".Menu_Principal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Enrutador.BubbleActivity" />
+        <activity
+            android:name=".Enrutador.view_ruta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Enrutador.DetalleEstablecimiento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Enrutador.Ruta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Enrutador.Busqueda"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Enrutador.busquedaCentro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Enrutador.reporteIncidentes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ODK.ODK"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ODK.Sesion_sabados"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ODK.OpenBlankFormActivity"
+            android:screenOrientation="portrait"
+            android:saveEnabled="false"/>
+        <activity
+            android:name=".ODK.ejecucion_ODK"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ODK.estado_establecimiento"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".dialogs.DialogWarning"
+            android:theme="@style/NoTitleDialog2"></activity>
+        <activity
+            android:name=".dialogs.DialogInfoAcompanante"
+            android:theme="@style/NoTitleDialog2"></activity>
+        <activity
+            android:name=".dialogs.DialogNuevaRuta"
+            android:theme="@style/NoTitleDialog2"></activity>
+
+        <activity
+            android:name=".dialogs.DialogInfoCentro"
+            android:theme="@style/NoTitleDialog2"></activity>
+
+        <service
+            android:name=".Enrutador.BubbleHeadService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

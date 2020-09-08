@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/commonListItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_group_item_height_draggable"
+
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:elevation="2dp">
+
+
+    <FrameLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/white"
+
+        android:clickable="true"
+
+        tools:ignore="UselessParent">
+
+        <!-- NOTE: the drag handle should set android:clickable=true not to propagate click events to the parent views -->
+        <ImageView
+            android:id="@+id/imageAvatar_draggable"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@null"
+            tools:src="@drawable/ic_action_home" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/codigo"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="34dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="left|center"
+                android:textColor="@color/colorTextDark"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/nombre"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="34dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="left|center"
+                android:text="NOMBRE DEL CENTRO EDUCIATIVO NOMBRE LARGO"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="10dp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/direccion"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="34dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="left|center"
+                android:text="DIRECCION DEL CENTRO EDUCATIVO DIRECCION LARGA"
+                android:textColor="@color/colorTextGrey"
+                android:textSize="10dp"
+
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

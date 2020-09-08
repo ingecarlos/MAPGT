@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main" >
+    <group
+        android:id="@+id/menu_rutas_group">
+
+        <item
+            android:id="@+id/ver_ruta"
+            android:minWidth="150dp"
+            android:icon="@drawable/ic_location"
+            android:title="Ver Ruta" />
+
+        <item
+            android:id="@+id/borrar_ruta"
+            android:minWidth="125dp"
+            android:icon="@drawable/ic_settings"
+            android:title="Borrar Ruta" />
+
+    </group>
+
+</menu>

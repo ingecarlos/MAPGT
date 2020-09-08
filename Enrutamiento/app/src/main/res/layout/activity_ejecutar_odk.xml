@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Enrutador.Busqueda">
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container_Search"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:background="@drawable/side_nav_bar"
+            android:minHeight="80dp"
+
+            android:paddingLeft="35dp"
+
+            android:paddingRight="35dp"
+            tools:layout_editor_absoluteY="400dp">
+
+
+            <Button
+                android:id="@+id/btn_ver_ruta"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="end"
+
+
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ripple_backgrounwhite_rounded"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="Añadir centro"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <Button
+                android:id="@+id/busqueda_avanzada"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="end"
+
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ripple_backgrounwhite_rounded"
+                android:clickable="true"
+                android:elevation="4dp"
+
+
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Llenar sin centro"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/btn_ver_ruta" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.25"
+                android:text="Escoja un centro para llenar el instrumento o llenelo sin seleccionar un centro"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/backgroundColorWhite"
+                android:textSize="10dp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Lista"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Enrutador.Busqueda">
+
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container_Search"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+
+            android:background="@drawable/side_nav_bar"
+            android:minHeight="80dp"
+
+            android:paddingLeft="35dp"
+
+            android:paddingRight="35dp"
+            tools:layout_editor_absoluteY="400dp">
+
+            <EditText
+                android:id="@+id/textSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/search_box"
+
+                android:ems="10"
+
+                android:fontFamily="sans-serif-medium"
+                android:hint="codigo de centro"
+
+                android:inputType="number"
+                android:letterSpacing="0.25"
+                android:maxLength="13"
+                android:minHeight="40dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+
+                android:textColor="@color/backgroundColorWhite"
+
+
+                android:textColorHint="@color/backgroundColorWhite"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.551"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04" />
+
+
+            <Button
+                android:id="@+id/btn_ver_ruta"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="end"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+
+
+                android:background="@drawable/ripple_backgrounwhite_rounded"
+                android:clickable="true"
+
+                android:elevation="4dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="Ver ruta"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/textSearch"
+                app:layout_constraintTop_toBottomOf="@id/textSearch" />
+
+            <Button
+                android:id="@+id/busqueda_avanzada"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="end"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@drawable/ripple_backgrounwhite_rounded"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+
+
+                android:text="Búsqueda avanzada"
+                android:textColor="@color/colorTextDark"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/textSearch"
+                app:layout_constraintTop_toBottomOf="@id/textSearch" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="124dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.25"
+                android:text="Al finalizar la construcción de la ruta regrese al menú principal"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/backgroundColorWhite"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/busqueda_avanzada"
+                app:layout_constraintStart_toStartOf="@+id/btn_ver_ruta"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/myRecyclerViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

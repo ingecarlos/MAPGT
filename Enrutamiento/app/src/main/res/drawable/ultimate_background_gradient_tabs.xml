@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/final_background_lineindicator"></item>
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="0"
+                android:endColor="#e6fe5196"
+                android:startColor="#e6f77062" />
+        </shape>
+    </item>
+</layer-list>

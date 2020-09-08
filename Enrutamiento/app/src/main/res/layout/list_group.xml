@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/commonListItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_group_item_height_expandable"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:elevation="2dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_group_item_height_expandable">
+
+        <TextView
+            android:id="@+id/listItemClave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+
+
+            android:fontFamily="sans-serif-light"
+            android:gravity="top|left"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Phillip Melendez" />
+
+        <TextView
+            android:id="@+id/listItemValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+
+
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@id/listItemClave"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="14dp"
+            tools:text="(1972)"
+
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

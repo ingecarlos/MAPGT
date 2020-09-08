@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".informeGraficos.informeGraficos">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/tituloID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tituloGraficos"
+                android:textAlignment="center"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subTituloID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <!--GRAFICO 1-->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tbObteniendoInforme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obteniendo Informe:\n Esto puede tardar varios segundos"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/actividadesID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/actividades"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chartActividades"
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <!--GRAFICO 2-->
+            <TextView
+                android:id="@+id/promedioInvolucradosID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/promedioInvolucrados"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.example.george.enrutamiento.charts.VerticalTextView
+                    style="@style/verticalTextStyle"
+                    android:id="@+id/porcentajeAlumnosLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="340dp"
+                    android:gravity="center"
+                    android:text="@string/promedioInvolucradosTitleY"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chartPromedioInvolucrados"
+                    android:layout_width="290dp"
+                    android:layout_height="340dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <!--GRAFICO 3-->
+            <TextView
+                android:id="@+id/actividadesInvolucramientoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/actividadesInvolucramiento"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/chartActividadesInvolucramiento"
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/labelsGrafico3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+            <!--GRAFICO 4-->
+            <TextView
+                android:id="@+id/materialesID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/materialesClase"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chartMateriales"
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <!--GRAFICO 5-->
+            <TextView
+                android:id="@+id/materialesInvolucramientoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/materialesInvolucramientoClase"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/chartMaterialesInvolucramiento"
+                android:layout_width="340dp"
+                android:layout_height="340dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/labelsGrafico4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+
+            <Button
+                android:id="@+id/guardarReporteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="guardarReporte"
+                android:text="Guardar Reporte" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="57dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,146 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="textInputLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/backgroundColorWhite</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/backgroundColorWhite</item>
+        <item name="colorControlNormal">@color/backgroundColorWhite</item>
+        <item name="colorControlActivated">@color/backgroundColorWhite</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- status bar translucent -->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/ripple_material_dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/colorTextDark</item>
+        <item name="android:textColorSecondary">@color/colorTextGray2</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="seekBarStyle" parent="AppTheme.NoActionBar">
+        <item name="colorAccent">@color/colorTextDark</item>
+
+    </style>
+    <style name="dropDown" parent="AppTheme">
+        <item name="android:itemBackground">@drawable/ripple_overflow_menu</item>
+        <item name="android:itemTextAppearance">@style/optionMenuTextApearance</item>
+        <item name="android:itemPadding">25dp</item>
+
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="optionMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/colorTextGrey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+    </style>
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+
+        <item name="android:dropDownHorizontalOffset">-10dp</item>
+        <item name="android:dropDownVerticalOffset">12dp</item>
+
+
+    </style>
+
+
+    <style name="editTextWhite" parent="AppTheme.NoActionBar">
+        <item name="colorControlNormal">#33000000</item>
+        <item name="colorControlActivated">@color/backgroundColorWhite</item>
+    </style>
+
+    <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorAccent">@android:color/black</item>
+
+    </style>
+
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/ripple_material_dark</item>
+    </style>
+
+    <style name="myRecyclerViewStyle">
+        <!-- NOTE: clipChildren should be true on API level 10 -->
+        <!--<icard_titlename="android:clipChildren">true</item>
+        <icard_titlename="android:clipToPadding">false</item>
+        <icard_titlename="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <icard_titlename="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <icard_titlename="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <icard_titlename="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <icard_titlename="android:scrollbarStyle">outsideOverlay</item>
+        <icard_titlename="android:scrollbars">vertical</item>-->
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <!-- <icard_titlename="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+         <icard_titlename="android:paddingRight">@dimen/activity_horizontal_margin</item>-->
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="commonListItemStyle">
+    </style>
+
+    <style name="NoTitleDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorControlNormal">@color/colorTextGrey</item>
+        <item name="colorControlActivated">@color/colorTextGrey</item>
+        <item name="colorControlHighlight">@color/colorTextGrey</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="NoTitleDialog2" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+
+
+
+    </style>
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/backgroundColor</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="verticalTextStyle" parent="android:Widget.TextView">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

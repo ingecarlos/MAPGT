@@ -1,0 +1,61 @@
+<resources>
+    <!--SERVIDOR DE ODK AGGREGATE-->
+    <string name="odkAgreggateServer">http://odk.exitoescolar.org/ODKAggregate</string>
+
+    <string name="app_name">MAP-GT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Usuario</string>
+    <string name="nav_header_subtitle">Usuario@gmail.com</string>
+    <string name="mensaje">waze</string>
+    <string name="nav_header_desc">waze</string>
+
+
+    <string name="inicio">Inicio</string>
+    <string name="desarrollo">Desarrollo</string>
+    <string name="cierre">Cierre</string>
+
+
+    <string name="action_settings">waze</string>
+    <string name="title_activity_detalle_establecimiento">DetalleEstablecimiento</string>
+    <string name="titulo_menu">MENÚ PRINCIPAL</string>
+    <string name="title_activity_odk">ODK</string>
+    <string name="titulo_odk">Formularios ODK</string>
+    <string name="titulo_sesion_sabado">Sesión en sedes Sábados</string>
+
+    <!--ERRORES-->
+    <string name="error_gps">Error Obteniendo coordenadas. Encienda el GPS y recalcule la ruta</string>
+    <string name="error_permisos_gps">Se requieren permisos para acceder a la ubicación actual</string>
+
+    <!--MENSAJES-->
+    <string name="encender_gps">Encender el GPS para el correcto funcionamiento de esta herramienta</string>
+    <string name="inicio_sabado_mensaje">El presente instrumento debe ser llenado obligatoriamente una sola vez al iniciar el acompañamiento de los profesorados de los días sábados.</string>
+    <string name="fin_sabado_mensaje">El presente instrumento debe ser llenado obligatoriamente una sola vez al finalizar el acompañamiento de los profesorados de los días sábados.</string>
+    <string name="nueva_ruta_mensaje">Ha creado una ruta con anterioridad. ¿Desea crear una nueva ruta o mantener la anterior?</string>
+
+    <!--NOMBRE DE FORMULARIOS-->
+    <!--aplicacion del cnb-->
+    <string name="aplicacionCNB">Observación de aplicación del CNB</string>
+    <string name="IDAplicacionCNB">aplicacionCNB</string>
+    <!--aplicacion del cnb-->
+    <string name="stallings">Acompañamiento del uso de tiempo de clase</string>
+    <string name="IDStallings">stallings2019</string>
+
+    <!--BOTONES-->
+    <string name="btnGraficos">Informe de tiempo de clase</string>
+
+
+    <!--NOMBRE DE GRAFICOS-->
+    <string name="tituloGraficos">Resultados de la observación del uso de Tiempo de clase</string>
+    <string name="actividades">1. Actividades académicas y no académicas realizadas por el docente</string>
+    <string name="promedioInvolucrados">2. Promedio de involucramiento de los alumnos en actividades académicas</string>
+    <string name="actividadesInvolucramiento">3. Actividades del docente y alumnos involucrados en actividades académicas</string>
+    <string name="materialesClase">4. Materiales utilizados</string>
+    <string name="materialesInvolucramientoClase">5. Materiales utilizados por el docente y alumnos involucrados en actividades académicas</string>
+
+    <!--TITULOS DE EJE-->
+    <string name="promedioInvolucradosTitleY">Porcentaje de alumnos</string>
+    <string name="title_activity_informe_menu_principal">informeMenuPrincipal</string>
+
+
+</resources>

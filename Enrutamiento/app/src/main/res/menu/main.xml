@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main" >
+
+
+    <group
+        android:id="@+id/main_menu_group">
+
+        <item
+            android:id="@+id/navigation_item_1"
+            android:minWidth="150dp"
+
+            android:icon="@drawable/ic_settings"
+
+            android:title="first" />
+
+
+        <item
+            android:id="@+id/navigation_item_2"
+            android:minWidth="150dp"
+
+            android:icon="@drawable/ic_settings"
+
+            android:title="second" />
+
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/ic_friends"
+
+            android:title="third" />
+    </group>
+
+</menu>
